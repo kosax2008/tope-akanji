@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tope Akanji Automobile Engineer.</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+    }
+    .image-gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .carousel {
+      max-width: 300px;
+      margin: 10px auto;
+      position: relative;
+    }
+    .carousel img {
+      width: 100%;
+      display: none;
+    }
+    .carousel img.active {
+      display: block;
+    }
+    .slide-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 40px 20px;
+    }
+    .slide {
+      flex: 1 1 300px;
+      background: #0a07f1;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .slide h3 {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+    .slide .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #0ee647;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tope Akanji Automobile Engineer.</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <marquee>Hello customers we offer all kinds of services here at Tope Akanji Automobile Engineer workshop all our informations about us will be stated in the website thank you for visiting our website please feel free to contact us on 09167636659 thank you......</marquee>
+  <main>
+    <div class="hero-content">
+      <h2>Expert Car Repair Services</h2>
+      <p>Trusted by drivers for 20+ years. Reliable, fast, and affordable.</p>
+      <a href="contact.html" class="btn">Book a Service</a>
+      <a href="https://wa.me/2349167636659" class="btn whatsapp" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+    </div><br><br><br><br><br><br><br><br><br><br>
+
+    <video controls width="600" style="display: block; margin: 30px auto;">
+      <source src="videos/n.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="slide-row">
+      <div class="slide">
+        <img src="images/x.jpeg" alt="Slide 1" />
+        <h3>Engine Diagnostics</h3>
+        <p>Accurate fault detection and performance checks.</p>
+        <a href="contact.html" class="btn">Learn More</a>
+      </div>
+      <div class="slide">
+        <img src="images/p.jpeg" alt="Slide 2" />
+        <h3>Brake Services</h3>
+        <p>We fix and upgrade your braking systems for safety.</p>
+        <a href="contact.html" class="btn">Learn More</a>
+      </div>
+      <div class="slide">
+        <img src="images/me.jpeg" alt="Slide 3" />
+        <h3>check engine</h3>
+        <p>Do general ckeckups on your vehicle for prevention.</p>
+        <a href="contact.html" class="btn">Learn More</a>
+      </div>
+       <div class="slide">
+        <img src="images/b.avif" alt="Slide 3" />
+        <h3>Car conversion</h3>
+        <p>We can convert yor car from manual to automatic and also from automatic to manual.</p>
+        <a href="contact.html" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="image-gallery">
+      <img src="images/v.jpeg" alt="Repair 1">
+      <img src="images/background.jpg" alt="Repair 2">
+    </div>
+
+    <div class="carousel">
+      <img src="images/v.jpeg" class="active" alt="Slide 1">
+      <img src="images/f.jpeg" alt="Slide 2">
+      <img src="images/R.jpeg" alt="Slide 3">
+      <img src="images/b.avif" alt="Slide 4">
+      <img src="images/x.jpeg" alt="Slide 5">
+      <img src="images/background.jpg" alt="Slide 6">
+      <img src="images/OIP.jpeg" alt="Slide 7">
+      <img src="images/me.jpeg" alt="Slide 8">
+      <img src="images/h.jpeg" alt="Slide 9">
+      <img src="images/p.jpeg" alt="Slide 10">
+    </div>
+    <script>
+      const images = document.querySelectorAll('.carousel img');
+      let current = 0;
+      setInterval(() => {
+        images[current].classList.remove('active');
+        current = (current + 1) % images.length;
+        images[current].classList.add('active');
+      }, 3000);
+    </script>
+  </main>
+
+  <footer>
+    <p>At Tope Akanji Automobile Engineer, we go beyond repairs — we restore confidence. Our team is committed to providing reliable, honest, and quality automotive solutions tailored to every customer’s needs. From diagnostics to detailed repairs, we treat every vehicle with the same care and precision as if it were our own. Our passion for excellence drives everything we do, ensuring your journey remains smooth, safe, and stress-free. We thank you for your continued trust and support.</p>
+   <video controls width="600" style="display: block; margin: 30px auto;">
+      <source src="videos/n.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <p><b><i>How to contact us.</i></b></p><br><br>
+
+    <video controls width="600" style="max-width:100%;">
+      <source src="videos/j.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <p><b><i>How to find our location on the map.</i></b></p><br><br>
+    <p>&copy; 2025 Tope Akanji Automobile Engineer. All rights reserved.</p>
+  </footer>
+</body>
+</html>
